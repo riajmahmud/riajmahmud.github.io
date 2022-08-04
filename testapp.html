@@ -10,10 +10,17 @@
       ABC 123
       <button onclick="dosomething()">Click Me!</button>
       <p id="editable">I will be changed!!!</p>
+          
+          <input type="text" id="text-input" />
+          <button onclick="hi()">Click Me!</button>
       
       <script>
         function dosomething(){
         document.getElementById("editable").innerHTML = "Changed by javascript";
+        }
+        function hi(){
+        var data = document.getElementById("text-input").value;
+            alert(data);
         }
       </script>
  
